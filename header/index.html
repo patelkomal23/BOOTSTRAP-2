@@ -11,26 +11,13 @@
 
   <!-- css -->
   <style>
-    .navbar-nav a {
-      color: rgb(0, 0, 0);
-    }
-
     .navbar-nav a:hover {
       color: #0ea2bd;
     }
-
-    .img {
-      margin-top: 180px;
+    .contain{
+      margin-top: 80px;
     }
-
-    .herobiz {
-      color: #0ea2bd;
-    }
-
-    h1 {
-      font-size: 32px;
-      font-weight: 300;
-    }
+   
   </style>
 
 </head>
@@ -38,13 +25,14 @@
 
 <body>
   <!-- Navbar -->
-  <header class="navbar navbar-expand-lg d-flex justify-content-center bg-light fixed-top">
+  <header class="navbar navbar-expand-lg d-flex justify-content-center bg-light">
     <div class="container">
-      <h1>HeroBiz<span class="herobiz">.</span>
+      <h1 class="fw-light">HeroBiz<span class="text-primary">.</span>
       </h1>
       <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#item"><span
           class="navbar-toggler-icon"></span></button>
-      <nav class="collapse navbar-collapse flex-lg-grow-0 nav-underline" id="item">
+      <nav class="collapse navbar-collapse flex-lg-grow-0" id="item">   <!-- nav-underline -->
+     
         <ul class="navbar-nav gap-3 fw-semibold fs-6">
           <li><a href="#" class="nav-link">Home</a></li>
           <li><a href="#" class="nav-link">About</a></li>
@@ -67,14 +55,14 @@
 
       </nav>
 
+      <!-- <button type="button" class="btn btn-primary">Get Started</button> -->
     </div>
-    <!-- <button type="button" class="btn btn-primary">Get Started</button> -->
 
   </header>
   <!-- Navbar End -->
 
-
-  <div class="container-fluid img">
+<!-- home -->
+  <div class="container-fluid contain">
     <div class="row">
 
       <div class="col-6">
@@ -84,7 +72,7 @@
 
 
       <div class="col-6">
-        <h1 class="fs-1 fw-bolder">Welcome to <span class="herobiz">HeroBiz</span></h1>
+        <h1 class="fs-1 fw-bolder">Welcome to <span class="text-primary">HeroBiz</span></h1>
         <p class="fs-5 text-body-secondary">Lorem ipsum dolor sit amet consectetur elit. <br> Corrupti facere illo aut
           architecto hic modi <br> ratione quis cupiditate! Blanditiis.</p>
         <div class="mx-auto">
