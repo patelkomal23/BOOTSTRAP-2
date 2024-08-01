@@ -6,8 +6,8 @@
 
 
 
-body{
-    /* font-family: '' !important; */
+body {
+    /* font-family: 'jost' !important; */
 }
 
 /* header */
@@ -23,19 +23,77 @@ nav ul li:last-child a:hover {
     background-image: linear-gradient(to right, #5758e0, #007bff);
     color: white !important;
 }
+
 /* carousel */
-.carousel-item{
-background: url(../img/slide.jpg),rgba(0, 0, 0, 0.7);
-background-size: cover;
-padding: 100px;
-background-blend-mode: color-burn;
+.carousel-item {
+    background: url(../img/slide.jpg), rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    padding: 100px 0px;
+    background-blend-mode: color-burn;
 
 }
-.carousel-item a{
+
+.carousel-item a {
     background-color: #5758e0;
 }
-.carousel-item h2{
- background-image:linear-gradient(to left, #55b4d4, #5758e0);
-background-clip: text;
-color: transparent;
+
+.carousel-item h2 {
+    background-image: linear-gradient(to left, #55b4d4, #5758e0);
+    background-clip: text;
+    color: transparent;
+}
+
+/* services */
+
+.services-item a i:first-child {
+    background-image: linear-gradient(to left, #55b4d4, #5758e0);
+    background-clip: text;
+    color: transparent;
+}
+.services {
+    padding: 100px 0px;
+}
+
+.services-item:hover {
+    background-image: linear-gradient(to left, #55b4d4, #5758e0);
+    color: white !important;
+    transform: translateY(-10px);
+}
+
+.services-item a:hover {
+    color: white !important;
+}
+
+
+.services .col-4:first-child .services-item a::before {
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    background-image: linear-gradient(to left, #55b4d4, #5758e0);
+    top: -20px;
+    left: -10px;
+    content: '';
+    z-index: -1;
+}
+
+
+.services .col-4:last-child .services-item a::before {
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    background-image: linear-gradient(to left, #55b4d4, #5758e0);
+    right: -10px;
+    bottom: -20px;
+    content: '';
+    z-index: -1;
+}
+/* about */
+.about span{
+    width: 50px;
+    height: 5px;
+    background-image: linear-gradient(to left, #55b4d4, #5758e0);
+
+}
+.about {
+    padding: 100px 0px;
 }
