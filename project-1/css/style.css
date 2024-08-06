@@ -4,13 +4,10 @@
     box-sizing: border-box;
 }
 
-::placeholder{
+::placeholder {
     color: rgb(180, 143, 143) !important;
 }
 
-body {
-    /* font-family: 'jost' !important; */
-}
 
 /* header */
 header nav li:not(:last-child) a:hover {
@@ -45,7 +42,8 @@ nav ul li:last-child a:hover {
     color: transparent;
 }
 
-.carousel
+.carousel .carousel-control-prev{
+}
 /* services */
 
 .services-item a i:first-child {
@@ -98,12 +96,7 @@ nav ul li:last-child a:hover {
     display: none;
 }
 
-.services .col-4 .services-item a:hover p {
-    color: white !important;
-
-}
-
-.services .col-4 .services-item a:hover i {
+.services-item:hover .services-hover{
     color: white !important;
 
 }
@@ -224,23 +217,85 @@ nav ul li:last-child a:hover {
     transition: 0.2s;
 }
 
-.testimonial-item:hover .color {
+.testimonial-item:hover .testimonial-hover {
     color: white !important;
-   
+
 }
+
 /* taking */
-.taking{
+.taking {
     padding: 120px 0px;
 
 }
-.taking-contain span{
+
+.taking-contain span {
     width: 50px;
     height: 5px;
     background-image: linear-gradient(to left, #55b4d4, #5758e0);
 }
-.taking-contain .btn{
-background-color: #5758e0;
+
+.taking-contain .btn {
+    background-color: #5758e0;
 }
-.taking-contain .btn:hover{
+
+.taking-contain .btn:hover {
     background-image: linear-gradient(to left, #55b4d4, #5758e0);
-    }
+}
+.taking-img i{
+    background-image: linear-gradient(to right, #5758e0, lightseagreen);
+    background-clip: text;
+    color: transparent;
+}
+
+/* contact */
+.contact{
+    padding: 120px 0px;
+
+}
+.contact-item a i:first-child {
+    background-image: linear-gradient(to left, #55b4d4, #5758e0);
+    background-clip: text;
+    color: transparent;
+}
+.contact-item:hover  {
+    background-image: linear-gradient(to left, #55b4d4, #5758e0);
+    transform: translateY(-10px);
+    transition: 0.2s;
+}
+
+.contact .col-4:first-child .contact-item a::before {
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    background-image: linear-gradient(to left, #55b4d4, #5758e0);
+    top: -20px;
+    left: -10px;
+    content: '';
+    z-index: -1;
+}
+.contact .col-4:last-child .contact-item a::before {
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    background-image: linear-gradient(to left, #55b4d4, #5758e0);
+    right: -10px;
+    bottom: -20px;
+    content: '';
+    z-index: -1;
+}
+
+.contact .col-4:first-child .contact-item:hover a::before {
+    display: none;
+}
+
+.contact .col-4:last-child .contact-item:hover a::before {
+    display: none;
+}
+.contact-item:hover .contact-hover{
+    color: white !important;
+
+}
+/* footer */
+footer li a{
+    color: #55b4d4;
+}
