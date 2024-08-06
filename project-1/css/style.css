@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-
+::placeholder{
+    color: rgb(180, 143, 143) !important;
+}
 
 body {
     /* font-family: 'jost' !important; */
@@ -43,6 +45,7 @@ nav ul li:last-child a:hover {
     color: transparent;
 }
 
+.carousel
 /* services */
 
 .services-item a i:first-child {
@@ -58,7 +61,8 @@ nav ul li:last-child a:hover {
 .services-item:hover {
     background-image: linear-gradient(to left, #55b4d4, #5758e0);
     color: white !important;
-    /* transform: translateY(-10px); */
+    transform: translateY(-10px);
+    transition: 0.2s;
 }
 
 
@@ -84,6 +88,14 @@ nav ul li:last-child a:hover {
     bottom: -20px;
     content: '';
     z-index: -1;
+}
+
+.services .col-4:first-child .services-item:hover a::before {
+    display: none;
+}
+
+.services .col-4:last-child .services-item:hover a::before {
+    display: none;
 }
 
 .services .col-4 .services-item a:hover p {
@@ -139,32 +151,26 @@ nav ul li:last-child a:hover {
 
 }
 
-.portfolio .portfolio-inner .col-4 .portfolio-img img{
-    width: 300px !important;
-    height: 500px !important;
-
-}
-
-.portfolio .portfolio-inner .col-4{
-    object-fit: cover;
-}
-.col-4:hover .portfolio-overlay {
-    visibility: visible;
-}
-
-.portfolio-overlay {
-    position: absolute;
-    top: 0;
-    left: 11px;
-    background-image: linear-gradient(to left, #55b4d4, #5758e0);
-    width: 300px;
+.portfolio img {
     height: 500px;
-    visibility: hidden;
-    opacity: 0.9;
 }
-.portfolio-overlay h2{
-    margin-top: 60%;
 
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    transition: 0.2s;
+}
+
+.portfolio-overlay .card-img-overlay {
+    opacity: 0%;
+}
+
+.portfolio-overlay .card-img-overlay:hover {
+    background-image: linear-gradient(to left, rgba(85, 193, 212, 0.815), #5757e0d0);
+    opacity: 100%;
+}
+
+.portfolio-overlay .card-img-overlay h2 {
+    margin-top: 150px;
 }
 
 /* Video */
@@ -192,3 +198,49 @@ nav ul li:last-child a:hover {
 .video .video-inner i:hover {
     font-size: 10rem;
 }
+
+/* testimonial */
+.testimonial {
+    padding: 120px 0px;
+
+}
+
+.testimonial-item img {
+    width: 100px;
+    height: 100px;
+
+}
+
+.testimonial-item i {
+    background-image: linear-gradient(to left, #55b4d4, #5758e0);
+    background-clip: text;
+    color: transparent;
+}
+
+.testimonial-item:hover {
+    background-image: linear-gradient(to left, rgba(85, 193, 212, 0.815), #5757e0d0);
+    opacity: 100%;
+    transform: translateY(-10px);
+    transition: 0.2s;
+}
+
+.testimonial-item:hover .color {
+    color: white !important;
+   
+}
+/* taking */
+.taking{
+    padding: 120px 0px;
+
+}
+.taking-contain span{
+    width: 50px;
+    height: 5px;
+    background-image: linear-gradient(to left, #55b4d4, #5758e0);
+}
+.taking-contain .btn{
+background-color: #5758e0;
+}
+.taking-contain .btn:hover{
+    background-image: linear-gradient(to left, #55b4d4, #5758e0);
+    }
