@@ -5,7 +5,7 @@
 }
 
 ::placeholder {
-    color: rgb(180, 143, 143) !important;
+    color: rgb(255, 255, 255) !important;
 }
 
 
@@ -42,8 +42,7 @@ nav ul li:last-child a:hover {
     color: transparent;
 }
 
-.carousel .carousel-control-prev{
-}
+
 /* services */
 
 .services-item a i:first-child {
