@@ -3,7 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+body{
+    font-family: 'jost';
+}
 ::placeholder {
     color: rgb(255, 255, 255) !important;
 }
@@ -42,6 +44,10 @@ nav ul li:last-child a:hover {
     color: transparent;
 }
 
+.carousel button span{
+    background-color: #5758e0;
+
+}
 
 /* services */
 
