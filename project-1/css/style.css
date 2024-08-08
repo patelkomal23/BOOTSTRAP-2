@@ -70,7 +70,7 @@ nav ul li:last-child a:hover {
 
 
 
-.services .col-4:first-child .services-item a::before {
+.services .col-lg-4:first-child .services-item a::before {
     position: absolute;
     width: 80%;
     height: 70%;
@@ -82,7 +82,7 @@ nav ul li:last-child a:hover {
 }
 
 
-.services .col-4:last-child .services-item a::before {
+.services .col-lg-4:last-child .services-item a::before {
     position: absolute;
     width: 80%;
     height: 70%;
@@ -93,11 +93,11 @@ nav ul li:last-child a:hover {
     z-index: -1;
 }
 
-.services .col-4:first-child .services-item:hover a::before {
+.services .col-lg-4:first-child .services-item:hover a::before {
     display: none;
 }
 
-.services .col-4:last-child .services-item:hover a::before {
+.services .col-lg-4:last-child .services-item:hover a::before {
     display: none;
 }
 
@@ -151,6 +151,8 @@ nav ul li:last-child a:hover {
 
 .portfolio img {
     height: 500px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .portfolio-card:hover {
@@ -181,6 +183,8 @@ nav ul li:last-child a:hover {
     width: 100%;
     height: 400px;
     object-fit: cover;
+    object-position: center;
+
 
 }
 
@@ -199,7 +203,7 @@ nav ul li:last-child a:hover {
 
 /* testimonial */
 .testimonial {
-    padding: 120px 0px;
+    padding: 80px 0px;
 
 }
 
@@ -229,7 +233,7 @@ nav ul li:last-child a:hover {
 
 /* taking */
 .taking {
-    padding: 120px 0px;
+    padding: 50px 0px;
 
 }
 
@@ -254,7 +258,7 @@ nav ul li:last-child a:hover {
 
 /* contact */
 .contact{
-    padding: 120px 0px;
+    padding: 80px 0px;
 
 }
 .contact-item a i:first-child {
@@ -268,7 +272,7 @@ nav ul li:last-child a:hover {
     transition: 0.2s;
 }
 
-.contact .col-4:first-child .contact-item a::before {
+.contact .col-12:first-child .contact-item a::before {
     position: absolute;
     width: 80%;
     height: 70%;
@@ -278,7 +282,7 @@ nav ul li:last-child a:hover {
     content: '';
     z-index: -1;
 }
-.contact .col-4:last-child .contact-item a::before {
+.contact .col-12:last-child .contact-item a::before {
     position: absolute;
     width: 80%;
     height: 70%;
@@ -289,11 +293,11 @@ nav ul li:last-child a:hover {
     z-index: -1;
 }
 
-.contact .col-4:first-child .contact-item:hover a::before {
+.contact .col-12:first-child .contact-item:hover a::before {
     display: none;
 }
 
-.contact .col-4:last-child .contact-item:hover a::before {
+.contact .col-12:last-child .contact-item:hover a::before {
     display: none;
 }
 .contact-item:hover .contact-hover{
