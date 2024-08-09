@@ -3,13 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'jost';
 }
+
 ::placeholder {
     color: rgb(255, 255, 255) !important;
 }
-
 
 /* header */
 header nav li:not(:last-child) a:hover {
@@ -31,7 +32,6 @@ nav ul li:last-child a:hover {
     background-size: cover;
     padding: 100px 0px;
     background-blend-mode: color-burn;
-
 }
 
 .carousel-item a {
@@ -44,13 +44,11 @@ nav ul li:last-child a:hover {
     color: transparent;
 }
 
-.carousel button span{
+.carousel button span {
     background-color: #5758e0;
-
 }
 
 /* services */
-
 .services-item a i:first-child {
     background-image: linear-gradient(to left, #55b4d4, #5758e0);
     background-clip: text;
@@ -68,8 +66,6 @@ nav ul li:last-child a:hover {
     transition: 0.2s;
 }
 
-
-
 .services .col-lg-4:first-child .services-item a::before {
     position: absolute;
     width: 80%;
@@ -80,7 +76,6 @@ nav ul li:last-child a:hover {
     content: '';
     z-index: -1;
 }
-
 
 .services .col-lg-4:last-child .services-item a::before {
     position: absolute;
@@ -101,9 +96,8 @@ nav ul li:last-child a:hover {
     display: none;
 }
 
-.services-item:hover .services-hover{
+.services-item:hover .services-hover {
     color: white !important;
-
 }
 
 /* about */
@@ -111,7 +105,6 @@ nav ul li:last-child a:hover {
     width: 50px;
     height: 5px;
     background-image: linear-gradient(to left, #55b4d4, #5758e0);
-
 }
 
 .about {
@@ -123,12 +116,10 @@ nav ul li:last-child a:hover {
     width: 50px;
     height: 5px;
     background-image: linear-gradient(to left, #55b4d4, #5758e0);
-
 }
 
 .ability {
     padding: 100px 0px;
-
 }
 
 .ability-contain li i {
@@ -140,13 +131,11 @@ nav ul li:last-child a:hover {
 /* features */
 .features {
     padding: 100px 0px;
-
 }
 
 /* portfolio */
 .portfolio {
     padding: 100px 0px;
-
 }
 
 .portfolio img {
@@ -176,7 +165,6 @@ nav ul li:last-child a:hover {
 /* Video */
 .video {
     padding: 100px 0px;
-
 }
 
 .video .video-inner img {
@@ -184,8 +172,6 @@ nav ul li:last-child a:hover {
     height: 400px;
     object-fit: cover;
     object-position: center;
-
-
 }
 
 .video .video-inner i {
@@ -204,13 +190,11 @@ nav ul li:last-child a:hover {
 /* testimonial */
 .testimonial {
     padding: 80px 0px;
-
 }
 
 .testimonial-item img {
     width: 100px;
     height: 100px;
-
 }
 
 .testimonial-item i {
@@ -228,13 +212,11 @@ nav ul li:last-child a:hover {
 
 .testimonial-item:hover .testimonial-hover {
     color: white !important;
-
 }
 
 /* taking */
 .taking {
     padding: 50px 0px;
-
 }
 
 .taking-contain span {
@@ -250,23 +232,25 @@ nav ul li:last-child a:hover {
 .taking-contain .btn:hover {
     background-image: linear-gradient(to left, #55b4d4, #5758e0);
 }
-.taking-img i{
+
+.taking-img i {
     background-image: linear-gradient(to right, #5758e0, lightseagreen);
     background-clip: text;
     color: transparent;
 }
 
 /* contact */
-.contact{
+.contact {
     padding: 80px 0px;
-
 }
+
 .contact-item a i:first-child {
     background-image: linear-gradient(to left, #55b4d4, #5758e0);
     background-clip: text;
     color: transparent;
 }
-.contact-item:hover  {
+
+.contact-item:hover {
     background-image: linear-gradient(to left, #55b4d4, #5758e0);
     transform: translateY(-10px);
     transition: 0.2s;
@@ -282,6 +266,7 @@ nav ul li:last-child a:hover {
     content: '';
     z-index: -1;
 }
+
 .contact .col-12:last-child .contact-item a::before {
     position: absolute;
     width: 80%;
@@ -300,11 +285,12 @@ nav ul li:last-child a:hover {
 .contact .col-12:last-child .contact-item:hover a::before {
     display: none;
 }
-.contact-item:hover .contact-hover{
-    color: white !important;
 
+.contact-item:hover .contact-hover {
+    color: white !important;
 }
+
 /* footer */
-footer li a{
+.footer .container .row .col-lg-6 .footer-copy-right p>a{
     color: #55b4d4;
-}
+  }
